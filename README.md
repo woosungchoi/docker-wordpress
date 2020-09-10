@@ -50,7 +50,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git cron -y &
 ```
 
 ```bash
-curl -o dc https://raw.githubusercontent.com/woosungchoi/docker-wordpress/main/dc && bash dc setup && rm -f dc
+curl -o dc https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dc && bash dc setup && rm -f dc
 ```
 
 ### For Centos 8 users
@@ -60,7 +60,7 @@ sudo yum -y update && sudo yum install -y curl git crontabs
 ```
 
 ```bash
-curl -o dcc https://raw.githubusercontent.com/woosungchoi/docker-wordpress/main/dcc && bash dcc setup && rm -f dcc
+curl -o dcc https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcc && bash dcc setup && rm -f dcc
 ```
 
 ## Wordpress Install Configuration
@@ -115,7 +115,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sud
 ```
 
 ```bash
-curl -o dcl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/main/dcl && bash dcl setup && rm -f dcl
+curl -o dcl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcl && bash dcl setup && rm -f dcl
 ```
 
 ### For Centos 8 users
@@ -125,7 +125,7 @@ sudo yum -y update && sudo yum install -y curl git
 ```
 
 ```bash
-curl -o dccl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/main/dccl && bash dccl setup && rm -f dccl
+curl -o dccl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dccl && bash dccl setup && rm -f dccl
 ```
 
 ## Commands
