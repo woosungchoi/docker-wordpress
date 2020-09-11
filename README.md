@@ -82,7 +82,7 @@ Port : `6379`
 
 ## How to setup automatic execution of upgrade to latest version of Docker image
 
-First, change the `/your/path/to/docker-wordpress/` part of the `docker_upgrade.sh` file to suit your environment.
+First, change the `/your/path/to/wordpress/` part of the `docker_upgrade.sh` file to suit your environment.
 
 Then, make this file executable.
 
@@ -90,10 +90,10 @@ Then, make this file executable.
 chmod a+x docker_upgrade.sh
 ```
 
-And put it in crontab. Change the `/your/path/to/docker-wordpress/` part of the content below.
+And put it in crontab. Change the `/your/path/to/wordpress/` part of the content below.
 
 ```
-echo "30 12 * * * /your/path/to/docker-wordpress/docker_upgrade.sh >> /var/log/docker_upgrade_cron.log 2>&1" >> mycron && sudo crontab mycron && rm mycron
+echo "30 12 * * * /your/path/to/wordpress/docker_upgrade.sh >> /var/log/docker_upgrade_cron.log 2>&1" >> mycron && sudo crontab mycron && rm mycron
 ```
 
 ---
