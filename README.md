@@ -63,6 +63,46 @@ sudo yum -y update && sudo yum install -y curl git crontabs
 curl -o dcc https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcc && bash dcc setup && rm -f dcc
 ```
 
+---
+
+## How do I use this source locally and non SSL on dev environments?
+
+### For Ubuntu 20.04 LTS users
+
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
+```
+
+```bash
+curl -o dcl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcl && bash dcl setup && rm -f dcl
+```
+
+### For Centos 8 users
+
+```bash
+sudo yum -y update && sudo yum install -y curl git
+```
+
+```bash
+curl -o dccl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dccl && bash dccl setup && rm -f dccl
+```
+
+### For Windows 10 WSL2 Ubuntu 20.04 LTS users
+
+Install WSL2 Ubuntu 20.04 LTS and docker
+
+https://www.wsgvet.com/ubuntu/160 , https://www.wsgvet.com/ubuntu/180
+
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+```
+
+```bash
+curl -o dcwl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcwl && bash dcwl setup && rm -f dcwl
+```
+
+---
+
 ## Wordpress Install Configuration
 
 Database name : `YOUR DATABASE NAME`
@@ -106,27 +146,7 @@ Phpmyadmin : https://pma.yourdomain.com
 
 Portainer : https://port.yourdomain.com
 
-## How do I use this source locally and non SSL on dev environments?
-
-### For Ubuntu 20.04 LTS users
-
-```bash
-sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
-```
-
-```bash
-curl -o dcl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dcl && bash dcl setup && rm -f dcl
-```
-
-### For Centos 8 users
-
-```bash
-sudo yum -y update && sudo yum install -y curl git
-```
-
-```bash
-curl -o dccl https://raw.githubusercontent.com/woosungchoi/docker-wordpress/master/dccl && bash dccl setup && rm -f dccl
-```
+---
 
 ## Commands
 
